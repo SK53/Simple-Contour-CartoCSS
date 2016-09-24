@@ -1,0 +1,59 @@
+{
+  "bounds": [
+    101.9,
+    28,
+    103.1,
+    29
+  ],
+  "center": [
+    102.4998,
+    28.1912,
+    8
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 8,
+  "maxzoom": 16,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "contour"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "extent": [
+        101.999583333333,
+        27.9995833333333,
+        103.000416666667,
+        29.0004166666667
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "annapurna_contour",
+        "key_field": "guid",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "101.999583333333,27.9995833333333,103.000416666667,29.0004166666667",
+        "host": "localhost",
+        "dbname": "exp",
+        "user": "postgres",
+        "password": "original",
+        "id": "cont_test",
+        "project": "cont_test",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "contours",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "contours"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Contour Test",
+  "description": "",
+  "attribution": ""
+}
